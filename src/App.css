@@ -3,28 +3,12 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #000000;
-  padding: 1rem;
-}
-
-.navbar-light .navbar-toggler-icon {
-  border-radius: 5px;
-  background-color: #303131;
-}
-
-.navbar a:hover {
-  color: #00aced !important;
-}
-
 .container-background {
   position: relative;
   text-align: center;
-  color: white;
-  margin-bottom: 40px;
 }
 
-/* Centered text Discover Tokyo */
+/* Centered text: Discover Tokyo */
 .centered {
   position: absolute;
   top: 70%;

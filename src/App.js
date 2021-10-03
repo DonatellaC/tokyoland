@@ -7,33 +7,18 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Navbar, Nav, Card, Button, CardDeck, Image } from "react-bootstrap";
+import { Card, Button, CardDeck, Image } from "react-bootstrap";
 import background from "./images/background.png";
 
 import { data } from "./data";
+import Header from "./components/Header/Header";
 
 function App() {
   const [places, setPlaces] = useState(data);
   console.log(places);
   return (
     <div>
-      <header>
-        <Navbar className="navbar p-3 text-light" collapseOnSelect expand="lg">
-          <Navbar.Brand className="text-light" href="#home">Tokyoland</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto ">
-              <Nav.Link className="text-light" href="#things-to-do">Things to do</Nav.Link>
-              <Nav.Link className="text-light" href="#culture">Culture</Nav.Link>
-              <Nav.Link className="text-light" href="#food">Food</Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link className="text-light" href="#footer">About</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </header>
-
+      <Header />
       <div className="container-background">
         <Image
           className="img-background"

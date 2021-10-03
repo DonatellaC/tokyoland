@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+  border-radius: 5px;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  text-decoration: solid underline 3px red;
+  text-underline-offset: 8px;
+}
