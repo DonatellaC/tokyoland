@@ -1,0 +1,33 @@
+.container-background {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Centered text Discover Tokyo */
+.centered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(240, 63, 18, 0.4);
+}
+
+.img-background {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .centered {
+    width: 140px;
+    height: 50px;
+  }
+  .centered h1 {
+    font-size: 0.8rem;
+    margin-top: -5px;
+  }
+}

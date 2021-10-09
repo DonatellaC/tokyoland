@@ -8,10 +8,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Card, Button, CardDeck, Image } from "react-bootstrap";
-import background from "./images/background.png";
 
 import { data } from "./data";
 import Header from "./components/Header/Header";
+import TopSection from "./components/TopSection/TopSection";
 
 function App() {
   const [places, setPlaces] = useState(data);
@@ -19,16 +19,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="container-background">
-        <Image
-          className="img-background"
-          src={background}
-          alt="Meguro River, Matsuno, Japan"
-        />
-        <div className="centered">
-          <h1>Discover Tokyo</h1>
-        </div>
-      </div>
+      <TopSection />
 
       <section id="things-to-do">
         <h1 className="title-cards" >Things to do</h1>
