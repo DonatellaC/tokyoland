@@ -30,10 +30,10 @@ function Footer() {
                                     <a href="#things-to-do">Things to do</a>
                                 </li>
                                 <li>
-                                    <a href="#">Culture</a>
+                                    <a href="/culture">Culture</a>
                                 </li>
                                 <li>
-                                    <a href="#">Food</a>
+                                    <a href="/food">Food</a>
                                 </li>
                             </ul>
                         </div>
@@ -42,19 +42,19 @@ function Footer() {
                             <h6 className="title-links">Links</h6>
                             <ul className="footer-links">
                                 <li>
-                                    <a href="#">Contact Us</a>
+                                    <a href="#contact-us">Contact Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contribute</a>
+                                    <a href="#contribute">Contribute</a>
                                 </li>
                                 <li>
-                                    <a href="#">Team</a>
+                                    <a href="#team">Team</a>
                                 </li>
                                 <li>
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="#privacy-policy">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Sitemap</a>
+                                    <a href="#sitemap">Sitemap</a>
                                 </li>
                             </ul>
                         </div>
@@ -63,22 +63,22 @@ function Footer() {
                                 <div className="row icons-container">
                                     <ul className="social-icons">
                                         <li>
-                                            <a className="facebook" href="#">
+                                            <a className="facebook" href="#facebook">
                                                 <i>{<FontAwesomeIcon icon={faFacebook} />}</i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="twitter" href="#">
+                                            <a className="twitter" href="#twitter">
                                                 <i>{<FontAwesomeIcon icon={faTwitter} />}</i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="instagram" href="#">
+                                            <a className="instagram" href="#instagram">
                                                 <i>{<FontAwesomeIcon icon={faInstagram} />}</i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="envelope" href="#">
+                                            <a className="envelope" href="#envelope">
                                                 <i>{<FontAwesomeIcon icon={faEnvelope} />}</i>
                                             </a>
                                         </li>
@@ -88,8 +88,7 @@ function Footer() {
                             <div>
                                 <div className="row copyright-row">
                                     <p className="copyright-text">
-                                        &copy; {new Date().getFullYear()} - TokyoLand. All rights
-                                        reserved.
+                                        &copy; {new Date().getFullYear()} - TokyoLand. All rights reserved.
                                     </p>
                                 </div>
                             </div>

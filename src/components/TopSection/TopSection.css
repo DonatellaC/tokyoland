@@ -17,6 +17,17 @@
   background: rgba(240, 63, 18, 0.4);
 }
 
+.centered a {
+  color: white;
+  text-decoration: none;
+}
+
+.centered a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 .img-background {
   width: 100%;
 }
