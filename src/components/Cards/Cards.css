@@ -1,0 +1,44 @@
+.card {
+  width: 18rem;
+}
+
+.title-cards {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.img-places {
+  height: 180px;
+}
+
+.title-places {
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.text-places {
+  font-size: 0.9rem;
+  text-align: justify;
+  height: 140px;
+}
+
+.card-deck {
+  justify-content: center;
+}
+
+#things-to-do {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .card-deck {
+    margin: auto !important;
+  }
+
+  .card {
+    width: 100%;
+    padding: 10px;
+  }
+}
