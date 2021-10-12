@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Cards.css";
 import { data } from "../../data";
-import { Card, Button, CardDeck } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "./Cards.css";
 
 const responsive = {
     superLargeDesktop: {
@@ -15,24 +15,29 @@ const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 4,
-        slidesToSlide: 4, // optional, default to 1.
+        slidesToSlide: 4,
     },
     tablet: {
         breakpoint: { max: 1024, min: 768 },
         items: 3,
-        slidesToSlide: 3, // optional, default to 1.
+        slidesToSlide: 3,
     },
     mobile: {
-        breakpoint: { max: 767, min: 464 },
+        breakpoint: { max: 767, min: 501 },
         items: 2,
-        slidesToSlide: 1, // optional, default to 1.
+        slidesToSlide: 2,
+    },
+    smallDevices: {
+        breakpoint: { max: 500, min: 360 },
+        items: 1,
+        slidesToSlide: 1,
     },
 };
 
 function Cards() {
     const [places, setPlaces] = useState(data);
     return (
-        <div id="things-to-do m-5">
+        <div id="things-to-do">
             <h1 className="title-cards">Things to do</h1>
             <section className="parent m-5">
                 <Carousel
@@ -59,6 +64,9 @@ function Cards() {
                                         <Card.Title className="title-places">{name}</Card.Title>
                                         <Card.Text className="text-places">{description}</Card.Text>
                                         <Button variant="danger">Explore</Button>
+                                        <Button className="button-heart" variant="outline-danger">
+                                            {<FontAwesomeIcon icon={faHeart} />}
+                                        </Button>
                                     </Card.Body>
                                 </Card>
                             </div>

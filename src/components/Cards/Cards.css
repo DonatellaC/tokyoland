@@ -1,5 +1,7 @@
 .card {
   width: 18rem;
+  display: flex;
+  margin: auto;
 }
 
 .title-cards {
@@ -24,21 +26,61 @@
   height: 140px;
 }
 
-.card-deck {
-  justify-content: center;
-}
-
 #things-to-do {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 800px) {
-  .card-deck {
-    margin: auto !important;
-  }
+.button-heart {
+  margin-left: 8px;
+}
 
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 0;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0;
+}
+
+.react-multiple-carousel__arrow {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.react-multiple-carousel__arrow:hover {
+  background: rgb(245, 104, 104);
+}
+
+@media screen and (max-width: 800px) {
   .card {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+  }
+
+  .title-cards {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .img-places {
+    height: 120px;
+  }
+
+  .title-places {
+    font-size: 0.85rem !important;
+  }
+
+  .text-places {
+    font-size: 0.7rem;
+    height: 120px;
   }
 }
