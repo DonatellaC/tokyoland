@@ -5,7 +5,7 @@ import Food from "./screens/Food/Food";
 import Tokyo from "./screens/Tokyo/Tokyo";
 import Culture from "./screens/Culture/Culture";
 import Home from "./screens/Home/Home";
-
+import ThingsToDo from "./screens/ThingsToDo/ThingsToDo";
 
 function App() {
   return (
@@ -20,6 +20,9 @@ function App() {
           </Route>
           <Route path="/culture" component={Culture}>
             <Culture />
+          </Route>
+          <Route path="/things-to-do" component={ThingsToDo}>
+            <ThingsToDo />
           </Route>
           <Route path="/" exact component={Home}>
             <Home />
