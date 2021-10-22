@@ -21,7 +21,7 @@ function App() {
           <Route path="/culture" component={Culture}>
             <Culture />
           </Route>
-          <Route path="/things-to-do" component={ThingsToDo}>
+          <Route path="/things-to-do/:name" component={ThingsToDo}>
             <ThingsToDo />
           </Route>
           <Route path="/" exact component={Home}>

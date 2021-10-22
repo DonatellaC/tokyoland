@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { data } from "../../data";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,7 +37,6 @@ const responsive = {
 
 function Cards() {
   const [places, setPlaces] = useState(data);
-  const history = useHistory();
 
   return (
     <div id="things-to-do">
@@ -66,12 +65,9 @@ function Cards() {
                   <Card.Body>
                     <Card.Title className="title-places">{name}</Card.Title>
                     <Card.Text className="text-places">{description}</Card.Text>
-                    <Button
-                      onClick={() => history.push("/things-to-do")}
-                      variant="danger"
-                    >
-                      Explore
-                    </Button>
+                    <Link to={`/things-to-do/${place.name}`}>
+                      <Button variant="danger">Explore</Button>
+                    </Link>
                     <Button className="button-heart" variant="outline-danger">
                       {<FontAwesomeIcon icon={faHeart} />}
                     </Button>
