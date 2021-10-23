@@ -1,6 +1,8 @@
 .navbar {
   background-color: #000000;
   padding: 1rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .navbar-light .navbar-toggler-icon {

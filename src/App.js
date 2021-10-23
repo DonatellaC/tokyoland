@@ -24,6 +24,9 @@ function App() {
           <Route path="/things-to-do/:name" component={ThingsToDo}>
             <ThingsToDo />
           </Route>
+          <Route path="/things-to-do" component={ThingsToDo}>
+            <ThingsToDo />
+          </Route>
           <Route path="/" exact component={Home}>
             <Home />
           </Route>

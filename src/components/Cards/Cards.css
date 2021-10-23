@@ -13,6 +13,7 @@
 
 .img-places {
   height: 180px;
+  margin-right: 10px;
 }
 
 .title-places {
@@ -46,10 +47,12 @@
 
 .react-multiple-carousel__arrow--left {
   left: 0;
+  top: 50px;
 }
 
 .react-multiple-carousel__arrow--right {
   right: 0;
+  top: 50px;
 }
 
 .react-multiple-carousel__arrow {

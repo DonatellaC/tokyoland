@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../../components/Header/Header";
 
 function Food() {
-    return (
-        <div>
-            <h1>Japanese Food</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <h1>Japanese Food</h1>
+    </div>
+  );
 }
 
-export default Food
+export default Food;
