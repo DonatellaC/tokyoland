@@ -2,6 +2,7 @@ import React from "react";
 import "./Food.css";
 import lists from "./data";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 function Food() {
   return (
@@ -20,6 +21,7 @@ function Food() {
           </div>
         );
       })}
+      <Footer />
     </div>
   );
 }

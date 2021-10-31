@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,500");
+
+.container-notFound {
+  display: flex;
+  min-width: 100vh;
+  height: 100vh;
+  font-family: "Roboto Mono", "Liberation Mono", Consolas, monospace;
+}
+
+#text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#overlay {
+  position: relative;
+  margin: 0;
+  min-width: 100vh;
+  min-height: 100vh;
+  background: url(../../images/not-found.jpg) no-repeat;
+  background-size: cover;
+  color: #eeeeee;
+}
+
+.title-notFound {
+  font-size: 5.5rem;
+}
+
+.subtitle-notFound {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-notFound {
+  font-size: 1.15rem;
+  text-align: center;
+}

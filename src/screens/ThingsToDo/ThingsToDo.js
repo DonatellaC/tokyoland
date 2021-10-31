@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
 const ThingsToDo = () => {
@@ -8,6 +9,8 @@ const ThingsToDo = () => {
     <div>
       <Header />
       <h1>{name}</h1>
+      <h2>Things to do</h2>
+      <Footer />
     </div>
   );
 };

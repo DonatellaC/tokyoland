@@ -6,6 +6,7 @@ import Tokyo from "./screens/Tokyo/Tokyo";
 import Culture from "./screens/Culture/Culture";
 import Home from "./screens/Home/Home";
 import ThingsToDo from "./screens/ThingsToDo/ThingsToDo";
+import NotFound from "./screens/NotFound/NotFound";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           <Route path="/" exact component={Home}>
             <Home />
           </Route>
-          <Route render={() => <h1>404: page not found</h1>} />
+          <Route render={() => <NotFound />} />
         </Switch>
       </div>
     </Router>
