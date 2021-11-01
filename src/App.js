@@ -7,6 +7,7 @@ import Culture from "./screens/Culture/Culture";
 import Home from "./screens/Home/Home";
 import ThingsToDo from "./screens/ThingsToDo/ThingsToDo";
 import NotFound from "./screens/NotFound/NotFound";
+import TravelTips from "./screens/TravelTips/TravelTips";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/culture" component={Culture}>
             <Culture />
+          </Route>
+          <Route path="/travel-tips" component={TravelTips}>
+            <TravelTips />
           </Route>
           <Route path="/things-to-do/:name" component={ThingsToDo}>
             <ThingsToDo />

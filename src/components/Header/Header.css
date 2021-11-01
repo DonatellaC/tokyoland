@@ -9,8 +9,20 @@
   border-radius: 5px;
 }
 
-.navbar a:hover,
+/* .navbar a:hover,
 .navbar a:active {
   text-decoration: solid underline 3px red;
   text-underline-offset: 8px;
+}  */
+
+.navbar a:hover {
+  text-decoration: solid underline 3px red;
+}
+
+.active {
+  text-decoration: solid underline 4px red;
+}
+
+.text-light {
+  padding: 10px;
 }

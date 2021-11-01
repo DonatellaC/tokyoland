@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { Navbar, Nav } from "react-bootstrap";
 
@@ -18,20 +19,36 @@ function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="m-auto">
-              <Nav.Link className="text-light" href="/things-to-do">
+              <NavLink
+                className="text-light"
+                activeClassName="active"
+                to="/things-to-do"
+              >
                 Things to do
-              </Nav.Link>
-              <Nav.Link className="text-light" href="/culture">
+              </NavLink>
+              <NavLink
+                className="text-light"
+                activeClassName="active"
+                to="/culture"
+              >
                 Culture
-              </Nav.Link>
-              <Nav.Link className="text-light" href="/food">
+              </NavLink>
+              <NavLink
+                className="text-light"
+                activeClassName="active"
+                to="/food"
+              >
                 Food
-              </Nav.Link>
+              </NavLink>
             </Nav>
             <Nav>
-              <Nav.Link className="text-light" href="#footer">
-                About
-              </Nav.Link>
+              <NavLink
+                className="text-light"
+                activeClassName="active"
+                to="travel-tips"
+              >
+                Travel Tips
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
