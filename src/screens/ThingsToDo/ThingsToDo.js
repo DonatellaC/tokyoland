@@ -8,8 +8,9 @@ const ThingsToDo = () => {
   return (
     <div>
       <Header />
-      <h1>{name}</h1>
       <h2>Things to do</h2>
+      <h1>{name}</h1>
+
       <Footer />
     </div>
   );
