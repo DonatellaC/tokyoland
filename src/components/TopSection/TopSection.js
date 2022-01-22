@@ -5,18 +5,18 @@ import { Image } from "react-bootstrap";
 import background from "../../images/background.png";
 
 function TopSection() {
-    return (
-        <div className="container-background">
-            <Image
-                className="img-background"
-                src={background}
-                alt="Meguro River, Matsuno, Japan"
-            />
-            <div className="centered">
-                <h1>{<Link to="/tokyo">Discover Tokyo</Link>}</h1>
-            </div>
-        </div>
-    );
+  return (
+    <div className="container-background">
+      <Image
+        className="img-fluid"
+        src={background}
+        alt="Meguro River, Matsuno, Japan"
+      />
+      <div className="centered">
+        <h1>{<Link to="/tokyo">Discover Tokyo</Link>}</h1>
+      </div>
+    </div>
+  );
 }
 
 export default TopSection;

@@ -14,7 +14,6 @@
   border: 2px solid white;
   border-radius: 5px;
   padding: 20px;
-  /* background: rgba(240, 63, 18, 0.4); */
   background: rgb(10 6 6 / 40%);
 }
 
@@ -29,8 +28,9 @@
   font-weight: bold;
 }
 
-.img-background {
+.img-fluid {
   width: 100%;
+  max-height: 600px;
 }
 
 @media screen and (max-width: 800px) {

@@ -1,7 +1,13 @@
+.card-section {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   width: 18rem;
   display: flex;
-  margin: auto;
+  margin: 0.45rem;
+  padding: 0.75rem;
 }
 
 .title-cards {
@@ -13,7 +19,6 @@
 
 .img-places {
   height: 180px;
-  margin-right: 10px;
 }
 
 .title-places {
@@ -29,38 +34,6 @@
 
 #things-to-do {
   margin-bottom: 40px;
-}
-
-.button-heart {
-  margin-left: 8px;
-}
-
-.slider {
-  margin: 0 20px;
-  overflow: "hidden";
-  padding: 2rem 0;
-}
-
-.slider img {
-  width: 100%;
-}
-
-.react-multiple-carousel__arrow--left {
-  left: 0;
-  top: 50px;
-}
-
-.react-multiple-carousel__arrow--right {
-  right: 0;
-  top: 50px;
-}
-
-.react-multiple-carousel__arrow {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.react-multiple-carousel__arrow:hover {
-  background: rgb(245, 104, 104);
 }
 
 @media screen and (max-width: 800px) {
