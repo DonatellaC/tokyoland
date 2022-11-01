@@ -26,7 +26,9 @@ function Cards() {
                   <Card.Title className="title-places">{name}</Card.Title>
                   <Card.Text className="text-places">{description}</Card.Text>
                   <Link to={`/things-to-do/`}>
-                    <Button variant="danger">Explore</Button>
+                    <Button className="btn-explore" variant="danger">
+                      Explore
+                    </Button>
                   </Link>
                 </Card.Body>
               </Card>

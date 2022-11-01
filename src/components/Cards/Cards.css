@@ -36,6 +36,10 @@
   margin-bottom: 40px;
 }
 
+.btn-explore {
+  margin-top: 35px;
+}
+
 @media screen and (max-width: 800px) {
   .card {
     width: 100%;
